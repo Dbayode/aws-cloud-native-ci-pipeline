@@ -1,0 +1,22 @@
+{
+  "name": "aws-ci-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/app.js",
+    "build": "node --check src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git-codecommit.eu-west-2.amazonaws.com/v1/repos/aws-cloud-native-ci-pipeline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

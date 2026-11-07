@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 22
+    commands:
+      - echo "Installing dependencies"
+      - npm ci
+
+  build:
+    commands:
+      - echo "Checking application syntax"
+      - npm run build
+      - echo "Running automated tests"
+      - npm test
+
+  post_build:
+    commands:
+      - echo "CI build completed successfully"
+
+artifacts:
+  files:
+    - "src/**/*"
+    - "package.json"
+    - "package-lock.json"
+    - "README.md"
