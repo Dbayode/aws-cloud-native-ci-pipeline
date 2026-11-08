@@ -110,3 +110,5 @@ Region: `eu-west-2`
 This project demonstrates how AWS managed DevOps services can be combined to automate application integration and testing.
 
 Final validation of the pipeline, automatic triggers and artifact generation will be documented after successful execution.
+
+CI pipeline trigger verification.
